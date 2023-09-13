@@ -1,12 +1,7 @@
 <?php
 
-  // Establecemos Base de datos
-  $host = '127.0.0.1';
-  $usuario = 'quimica';
-  $contraseña = 'fi)38BA`a[7Xr8N7Wh!(t4$MGQ%kRhZ87;R=:6n"0M{68JPrLc';
-  $base = 'Quimica';
-  $conexion = mysqli_connect($host,$usuario,$contraseña,$base);
-  $conexion->set_charset("utf8mb4");
+  // Importamos base de datos
+  require("db.php");
 
   // Función: Devuelve una respuesta en la API.
   function respuesta($estado, $contenido = '', $codigo = 'API-200'){
