@@ -52,4 +52,15 @@
     return $ip;
   }
 
+  // Función: Se requiere sesión
+  function seRequiereSesion($api = null){
+    if(!isset($_SESSION['id'])){
+      if($api == null){
+        http_response_code(403);
+      }else{
+        respuesta("error", "No tiene los permisos suficientes para realizar la petición.", "API-403");
+      }
+    }
+  }
+
 ?>

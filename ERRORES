@@ -4,3 +4,4 @@ API-002: Un dispositivo intento almacenar una medición pero no aporto el valor.
 API-003: Un dispositivo intento almacenar una medición pero el token no es valido o es inexistente.
 API-004: Un dispositivo intento almacenar una medición pero hubo un error al momento de insertarlo en la base de datos.
 API-005: Hubo un error a la hora de intentar validar el token de un dispositivo en la base de datos.
+API-403: El usuario no tiene permisos necesarios o no esta logeado.

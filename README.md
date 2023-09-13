@@ -18,3 +18,4 @@ Aquí una lista de las tecnologías usadas:<br>
 
 ### <strong>v0.0.2</strong>
 • Se separo la çonexión de la base de datos del sistema.php.
+

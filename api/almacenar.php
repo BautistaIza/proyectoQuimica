@@ -16,7 +16,15 @@
 
     // Verificamos estado de la petición
     if($resultado){
-      respuesta("exitoso");
+
+      if($valor > 100){
+        respuesta("exitoso", "Mucho ruido" . "[" . $valor . "]");
+      }else if($valor > 50){
+        respuesta("exitoso", "Ruido moderado" . "[" . $valor . "]");
+      }else{
+        respuesta("exitoso", "Ruido normal" . "[" . $valor . "]");
+      }
+
     }else{
       respuesta('error', 'Hubo un error interno.', 'API-004');
     }
